@@ -27,5 +27,13 @@ namespace Teacher_Manager
             f.ShowDialog();
             f.Dispose();
         }
+
+        private void btnConsulta_Click(object sender, EventArgs e)
+        {
+            frmAgenda f = new frmAgenda();
+            f.ShowDialog();
+            f.Dispose();
+        }
     }
+    
 }

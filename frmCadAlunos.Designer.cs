@@ -37,7 +37,6 @@
             AutoValidate = AutoValidate.EnablePreventFocusChange;
             ClientSize = new Size(782, 553);
             Name = "frmCadAlunos";
-            StartPosition = FormStartPosition.CenterScreen;
             Text = "Cadastro de Alunos";
             ResumeLayout(false);
         }

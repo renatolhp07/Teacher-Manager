@@ -33,6 +33,7 @@ namespace Teacher_Manager
             btContato = new Button();
             btnCadTeacher = new Button();
             btnAgenda = new Button();
+            btnConsulta = new Button();
             SuspendLayout();
             // 
             // btContato
@@ -67,6 +68,7 @@ namespace Teacher_Manager
             // 
             btnAgenda.BackgroundImage = (Image)resources.GetObject("btnAgenda.BackgroundImage");
             btnAgenda.BackgroundImageLayout = ImageLayout.Center;
+            btnAgenda.ImageAlign = ContentAlignment.TopCenter;
             btnAgenda.Location = new Point(436, 21);
             btnAgenda.Name = "btnAgenda";
             btnAgenda.Size = new Size(179, 134);
@@ -77,11 +79,26 @@ namespace Teacher_Manager
             btnAgenda.UseVisualStyleBackColor = true;
             btnAgenda.Click += btnAgenda_Click;
             // 
+            // btnConsulta
+            // 
+            btnConsulta.BackgroundImage = (Image)resources.GetObject("btnConsulta.BackgroundImage");
+            btnConsulta.BackgroundImageLayout = ImageLayout.Center;
+            btnConsulta.ImageAlign = ContentAlignment.TopCenter;
+            btnConsulta.Location = new Point(646, 21);
+            btnConsulta.Name = "btnConsulta";
+            btnConsulta.Size = new Size(179, 134);
+            btnConsulta.TabIndex = 3;
+            btnConsulta.Text = "Consultar Agendamentos";
+            btnConsulta.TextAlign = ContentAlignment.BottomCenter;
+            btnConsulta.UseVisualStyleBackColor = true;
+            btnConsulta.Click += btnConsulta_Click;
+            // 
             // frmPrincipal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(651, 181);
+            ClientSize = new Size(851, 176);
+            Controls.Add(btnConsulta);
             Controls.Add(btnAgenda);
             Controls.Add(btnCadTeacher);
             Controls.Add(btContato);
@@ -102,5 +119,6 @@ namespace Teacher_Manager
         private Button btContato;
         private Button btnCadTeacher;
         private Button btnAgenda;
+        private Button btnConsulta;
     }
 }

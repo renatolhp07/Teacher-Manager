@@ -25,8 +25,8 @@ namespace Teacher_Manager
         private void btnLogar_Click(object sender, EventArgs e)
         {
             frmPrincipal f = new frmPrincipal();
-            f.ShowDialog();
-            f.Dispose();
+            f.Show();
+            this.Hide();
         }
     }
 }
