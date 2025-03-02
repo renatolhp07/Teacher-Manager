@@ -38,6 +38,7 @@
             ClientSize = new Size(782, 553);
             Name = "frmCadAlunos";
             Text = "Cadastro de Alunos";
+            Load += frmCadAlunos_Load;
             ResumeLayout(false);
         }
 
