@@ -12,6 +12,7 @@ namespace Teacher_Manager
             frmCadAlunos f = new frmCadAlunos();
             f.ShowDialog();
             f.Dispose();
+            //this.Hide();
         }
 
         private void btnCadTeacher_Click(object sender, EventArgs e)
@@ -19,6 +20,7 @@ namespace Teacher_Manager
             frmCadTeacher f = new frmCadTeacher();
             f.ShowDialog();
             f.Dispose();
+            this.Hide();
         }
 
         private void btnAgenda_Click(object sender, EventArgs e)
@@ -26,6 +28,7 @@ namespace Teacher_Manager
             frmAgenda f = new frmAgenda();
             f.ShowDialog();
             f.Dispose();
+            this.Hide();
         }
 
         private void btnConsulta_Click(object sender, EventArgs e)
@@ -33,6 +36,7 @@ namespace Teacher_Manager
             frmAgenda f = new frmAgenda();
             f.ShowDialog();
             f.Dispose();
+            this.Hide();
         }
     }
     

@@ -66,6 +66,7 @@
             // 
             txtPass.Location = new Point(103, 70);
             txtPass.Name = "txtPass";
+            txtPass.PasswordChar = '*';
             txtPass.Size = new Size(125, 27);
             txtPass.TabIndex = 4;
             // 
@@ -87,6 +88,7 @@
             btnCancel.TabIndex = 5;
             btnCancel.Text = "Cancelar";
             btnCancel.UseVisualStyleBackColor = true;
+            btnCancel.Click += btnCancel_Click;
             // 
             // frmLogin
             // 

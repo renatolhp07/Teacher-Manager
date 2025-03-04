@@ -28,5 +28,10 @@ namespace Teacher_Manager
             f.Show();
             this.Hide();
         }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

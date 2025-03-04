@@ -16,28 +16,30 @@ namespace Teacher_Manager
             this.Nome = "";
             this.RgAluno = "";
             this.CpfAluno = "";
+            this.Email = "";
+            this.TelAluno = "";
             this.EnderecoAluno = "";
             this.ResponsavelAluno = "";
             this.RgResponsavel = "";
             this.CpfResponsavel = "";
             this.EnderecoResp = "";
-            this.TelAluno = "";
         }
 
-        public Aluno(int idAluno, string nomeAluno, string rgAluno, 
-            string cpfAluno, string enderecoAluno, string respAluno, 
-            string rgResp, string cpfResp, string enderecoResp, string telAluno)
+        public Aluno(int idAluno, String nomeAluno, String rgAluno, 
+            String cpfAluno, String email, String enderecoAluno, String respAluno, 
+            String rgResp, String cpfResp, String enderecoResp, String telAluno)
         {
             this.Codigo = idAluno;
             this.Nome = nomeAluno;
             this.RgAluno = rgAluno;
             this.CpfAluno = cpfAluno;
+            this.TelAluno = telAluno;
+            this.Email = email;
             this.EnderecoAluno = enderecoAluno;
             this.ResponsavelAluno = respAluno;
             this.RgResponsavel = rgResp;
             this.CpfResponsavel = cpfResp;
             this.EnderecoResp = enderecoResp;
-            this.TelAluno = telAluno;
         }
 
         private int id_aluno;
@@ -89,6 +91,19 @@ namespace Teacher_Manager
             set
             {
                 this.cpf_aluno = value;
+            }
+        }
+
+        private string email_aluno;
+        public string Email
+        {
+            get
+            {
+                return this.email_aluno;
+            }
+            set
+            {
+                this.email_aluno = value;
             }
         }
 
